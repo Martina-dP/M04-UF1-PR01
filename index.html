@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
-        <title></title>
+        <title>SportsNews 24/7</title>
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#news">Noticias</a></li>
@@ -16,9 +17,15 @@
         </ul>
     </nav>
 
-    <section>
-        <h1>Welcome to My Website</h1>
-        <p>This is the main content of the website.</p>
+    <section id="home">
+        <h1>🏆Bienvenido a SportsNews 24/7 – Tu portal de deportes en tiempo real🏆</h1>
+        <div>
+            <p>Te traemos las últimas noticias, resultados en vivo, análisis exclusivos y todo lo que necesitas 
+                saber sobre tus deportes favoritos. Desde el fútbol y el baloncesto hasta el automovilismo y los eSports,
+                aquí encontrarás contenido actualizado y relevante para mantenerte siempre informado.
+            </p>
+            <p>This is the main content of the website.</p>
+        </div>
     </section>
 
     <form>
@@ -28,40 +35,152 @@
         <select id="sport" name="sport" required>
             <option value="football">Fútbol</option>
             <option value="basketball">Baloncesto</option>
-            <option value="Beisbol">Beisbol</option>
+            <option value="beisbol">Beisbol</option>
             <option value="f1">Formula1</option>
             <option value="golf">Golf</option>
             <option value="boxeo">Boxeo</option>
             <option value="bike">Ciclismo</option>
             <option value="run">Atletismo</option>
+        </select>
         <label for="date">Fecha:</label>
         <input type="date" id="date" name="date" required>
         <button type="submit">Buscar</button>
     </form>
 
-    <section>
+    <section id="news">
         <h1>Noticias</h1>
-        <p>This is the main content of the website.</p>
+        <p>Ver todas las noticias</p>
+        <div class="carousel-news">
+            <div class="carousel-news-inner">
+                <div class="carousel-news-item active">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image2.jpg" alt="Image 2">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+                <div class="carousel-news-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div>
+                        <h3>Titulo noticia</h3>
+                        <p>Leer detalles</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </section>
 
-    <section>
+    <section id="sports">
         <h1>Deportes</h1>
-        <li >Fútbol</li>
-        <li >Baloncesto</li>
-        <li >Beisbol</li>
-        <li >Formula1</li>
-        <li >Golf</li>
-        <li >Boxeo</li>
-        <li >Ciclismo</li>
-        <li >Atletismo</li>
+        <li >Fútbol ⚽</li>
+        <li >Baloncesto 🏀</li>
+        <li >Beisbol ⚾</li>
+        <li >Formula1 🏎️</li>
+        <li >Golf ⛳</li>
+        <li >Boxeo 🥊</li>
+        <li >Ciclismo 🚴</li>
+        <li >Atletismo  🏃</li>
     </section>
 
-    <section>
+    <section id="contact">
         <h1>Sponsors</h1>
-        <p>This is the main content of the website.</p>
+        <p>Conoce a nuestros patrocinadores.</p>
+        <div class="carousel-sponsors">
+            <div class="carousel-sponsors-inner">
+                <div class="carousel-sponsors-item active">
+                    <img src="image1.jpg" alt="Marca 1">
+                    <div>
+                        <h3>Marca/Empresa 1</h3>
+                    </div>
+                </div>
+                <div class="carousel-sponsors-item">
+                    <img src="image2.jpg" alt="Marca 2">
+                    <div>
+                        <h3>Marca/Empresa 2</h3>
+                    </div>
+                </div>
+                <div class="carousel-sponsors-item">
+                    <img src="image3.jpg" alt="Marca 3">
+                    <div>
+                        <h3>Marca/Empresa 3</h3>
+                    </div>
+                </div>
+                <div class="carousel-sponsors-item">
+                    <img src="image4.jpg" alt="Marca 4">
+                    <div>
+                        <h3>Marca/Empresa 4</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer id="contact">
+        <div>
+            <p>contacto@info.com</p>
+            <p>+34960860097</p>
+            <p>Calle falsa, valencia, España</p>
+        </div>
+        <div>
+        </div>
+            <p>Plotica de privacidad </p>
+            <p>Terminos y condiciones</p>
+        <div>
+            <select id="idioma" name="idioma">
+                <option value="español">Español</option>
+                <option value="ingles">Ingles</option>
+            </select>
+            <input type="text" id="text" name="text" placeholder="Dejar un comentario">
+            <button type="submit">enviar</button>
+        </div>
         <p>&copy; 2023 My Website</p>
     </footer>
 </body>
