@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="container">
+
     <nav class="navbar">
         <h1 class="navbar-title">SportsNews 24/7</h1>
         <ul class="navbar-menu">
@@ -18,19 +19,21 @@
     </nav>
 
     <section id="home" class="container-home">
-        <h1>🏆Bienvenido a SportsNews 24/7 – Tu portal de deportes en tiempo real🏆</h1>
-        <div>
-            <p>Te traemos las últimas noticias, resultados en vivo, análisis exclusivos y todo lo que necesitas 
-                saber sobre tus deportes favoritos. Desde el fútbol y el baloncesto hasta el automovilismo y los eSports,
-                aquí encontrarás contenido actualizado y relevante para mantenerte siempre informado.
-            </p>
-            <p>Explora nuestras secciones, descubre entrevistas con expertos, conoce a los mejores patrocinadores y 
-                únete a la comunidad de apasionados por el deporte. ¡Vive la emoción del deporte con nosotros!</p>
+        <div class="sub-container-home">
+            <h1 class="container-home-title">🏆Bienvenido a SportsNews 24/7 – Tu portal de deportes en tiempo real🏆</h1>
+            <div class="container-home-content">
+                <p>Te traemos las últimas noticias, resultados en vivo, análisis exclusivos y todo lo que necesitas 
+                    saber sobre tus deportes favoritos. Desde el fútbol y el baloncesto hasta el automovilismo y los eSports,
+                    aquí encontrarás contenido actualizado y relevante para mantenerte siempre informado.
+                </p>
+                <p>Explora nuestras secciones, descubre entrevistas con expertos, conoce a los mejores patrocinadores y 
+                    únete a la comunidad de apasionados por el deporte. ¡Vive la emoción del deporte con nosotros!</p>
+            </div>
         </div>
     </section>
 
     <form class="container-search">
-        <h3>Bucador</h3>
+        <h2>Bucador</h2>
         <div class="container-search-inner">
             <div>
                 <label for="title">Titulo:</label>
@@ -39,6 +42,7 @@
             <div>
                 <label for="sport">Deporte:</label>
                 <select id="sport" name="sport" required>
+                    <option value="none">Seleccione deporte</option>
                     <option value="football">Fútbol</option>
                     <option value="basketball">Baloncesto</option>
                     <option value="beisbol">Beisbol</option>
@@ -53,13 +57,13 @@
                 <label for="date">Fecha:</label>
                 <input type="date" id="date" name="date" required>
             </div>
-            <button type="submit">Buscar</button>
         </div>
+        <button class="container-search-btn" type="submit">Buscar</button>
     </form>
 
     <section id="news" class="container-news">
         <div class="container-news-nav">
-            <h3>Noticias 📰</h3>
+            <h2>Noticias 📰</h2>
             <p>Ver todas las noticias</p>
         </div>
         <div class="carousel-news">
@@ -127,42 +131,46 @@
     <div class="container-content">
 
         <section id="sports" class="container-sports">
-            <h3>Deportes</h3>
-            <li>Fútbol ⚽</li>
-            <li>Baloncesto 🏀</li>
-            <li>Beisbol ⚾</li>
-            <li>Formula1 🏎️</li>
-            <li>Golf ⛳</li>
-            <li>Boxeo 🥊</li>
-            <li>Ciclismo 🚴</li>
-            <li>Atletismo  🏃</li>
+            <h2>Deportes</h2>
+            <ul>
+                <p>Fútbol ⚽</p>
+                <p>Baloncesto 🏀</p>
+                <p>Beisbol ⚾</p>
+                <p>Formula1 🏎️</p>
+                <p>Golf ⛳</p>
+                <p>Boxeo 🥊</p>
+                <p>Ciclismo 🚴</p>
+                <p>Atletismo  🏃</p>
+            </ul>
         </section>
 
         <section class="container-sponsors">
-            <h3>Sponsors</h3>
-            <p>Conoce a nuestros patrocinadores.</p>
+            <div class="container-sponsors-nav">
+                <h2>Sponsors</h2>
+                <p>Conoce a nuestros patrocinadores.</p>
+            </div>
             <div class="carousel-sponsors">
                 <div class="carousel-sponsors-inner">
-                    <div class="carousel-sponsors-item active">
-                        <img src="image1.jpg" alt="Marca 1">
+                    <div class="carousel-sponsors-item ">
+                        <img class="carousel-sponsor-img" src="img/sponsor-1.jpg" alt="Marca 1">
                         <div>
                             <h3>Marca/Empresa 1</h3>
                         </div>
                     </div>
                     <div class="carousel-sponsors-item">
-                        <img src="image2.jpg" alt="Marca 2">
+                        <img class="carousel-sponsor-img" src="img/sponsor-2.jpg" alt="Marca 2">
                         <div>
                             <h3>Marca/Empresa 2</h3>
                         </div>
                     </div>
                     <div class="carousel-sponsors-item">
-                        <img src="image3.jpg" alt="Marca 3">
+                        <img class="carousel-sponsor-img" src="img/sponsor-3.jpg" alt="Marca 3">
                         <div>
                             <h3>Marca/Empresa 3</h3>
                         </div>
                     </div>
                     <div class="carousel-sponsors-item">
-                        <img src="image4.jpg" alt="Marca 4">
+                        <img class="carousel-sponsor-img" src="img/sponsor-4.jpeg" alt="Marca 4">
                         <div>
                             <h3>Marca/Empresa 4</h3>
                         </div>
@@ -170,28 +178,36 @@
                 </div>
             </div>
         </section>
-
     </div>
 
     <footer id="contact" class="container-footer">
-        <div>
-            <p>contacto@info.com</p>
-            <p>+34960860097</p>
-            <p>Calle falsa, valencia, España</p>
+        <div class="container-footer-Logo">
+            <p>ACA VA LOGO</p>
         </div>
-        <div>
+        <div class="sub-container-footer">
+            <div class="container-footer-contact-info">
+                <p>contacto@info.com</p>
+                <p>+34960860097</p>
+                <p>Calle falsa, valencia, España</p>
+            </div>
+            <div class="container-footer-links">
+                <p>Plotica de privacidad </p>
+                <p>Terminos y condiciones</p>
+                
+            </div>
+            <div class="container-footer-form">
+                <div>
+                    <select id="idioma" name="idioma">
+                        <option value="español">Español</option>
+                        <option value="ingles">Ingles</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="text" name="text" placeholder="Dejar un comentario">
+                    <button type="submit">enviar</button>
+                </div>
+            </div>
         </div>
-            <p>Plotica de privacidad </p>
-            <p>Terminos y condiciones</p>
-        <div>
-            <select id="idioma" name="idioma">
-                <option value="español">Español</option>
-                <option value="ingles">Ingles</option>
-            </select>
-            <input type="text" id="text" name="text" placeholder="Dejar un comentario">
-            <button type="submit">enviar</button>
-        </div>
-        <p>&copy; 2023 My Website</p>
     </footer>
 </body>
 </html>

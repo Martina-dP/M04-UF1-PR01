@@ -33,22 +33,63 @@
     text-decoration: none;
 }
 
-.container-home{
-    border: 1px solid black;
+.container-home {
+    height: 240px;
     margin-top: 10px;
+    padding: 10px;
+    background-image: url("./img/fondo-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.sub-container-home {
+    width: 70%;
+    height: 100%;
+    background-color: #ffffffcb;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-home-title {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; 
+}
+
+.container-home-content {
+    height: 70%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 10px;
 }
 
 .container-search{
     border: 1px solid black;
     margin-top: 10px;
     height: 220px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .container-search-inner{
     background-color: #0057B8;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    width: 60%;
+}
+
+.container-search-btn {
+    width: 20%;
 }
 
 .container-news {
@@ -56,6 +97,7 @@
     margin-top: 10px;
     padding: 10px;
     overflow: hidden; 
+    background-color: #0057B8;
 }
 
 .carousel-news {
@@ -106,7 +148,48 @@
     width: 48%;
 }
 
-.container-footer{
+.carousel-sponsors {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+}
+
+.carousel-sponsors-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-sponsors-item {
+    flex: 0 0 auto;
+    width: 80%; 
+    padding: 10px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.carousel-sponsor-img {
+    width: 70%;
+}
+
+.container-footer {
     border: 1px solid black;
+    height: 160px;
     margin-top: 10px;
+    background-color: #0057B8;
+}
+
+.container-footer-Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.sub-container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer-form {
+    width: 40%;
 }
