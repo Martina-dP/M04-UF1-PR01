@@ -20,7 +20,7 @@
 
     <section id="home" class="container-home">
         <div class="sub-container-home">
-            <h1 class="container-home-title">🏆Bienvenido a SportsNews 24/7 – Tu portal de deportes en tiempo real🏆</h1>
+            <h2 class="container-home-title">🏆Bienvenido a SportsNews 24/7 – Tu portal de deportes en tiempo real🏆</h2>
             <div class="container-home-content">
                 <p>Te traemos las últimas noticias, resultados en vivo, análisis exclusivos y todo lo que necesitas 
                     saber sobre tus deportes favoritos. Desde el fútbol y el baloncesto hasta el automovilismo y los eSports,
@@ -32,11 +32,11 @@
         </div>
     </section>
 
-    <form class="container-search">
-        <h2>Bucador</h2>
-        <div class="container-search-inner">
+    <section class="container-search">
+        <h2 class="container-search-title">Buscador</h2>
+        <form class="search-form">
             <div>
-                <label for="title">Titulo:</label>
+                <label for="title">Título:</label>
                 <input type="text" id="title" name="title" required>
             </div>
             <div>
@@ -45,8 +45,8 @@
                     <option value="none">Seleccione deporte</option>
                     <option value="football">Fútbol</option>
                     <option value="basketball">Baloncesto</option>
-                    <option value="beisbol">Beisbol</option>
-                    <option value="f1">Formula1</option>
+                    <option value="beisbol">Béisbol</option>
+                    <option value="f1">Fórmula 1</option>
                     <option value="golf">Golf</option>
                     <option value="boxeo">Boxeo</option>
                     <option value="bike">Ciclismo</option>
@@ -57,13 +57,13 @@
                 <label for="date">Fecha:</label>
                 <input type="date" id="date" name="date" required>
             </div>
-        </div>
-        <button class="container-search-btn" type="submit">Buscar</button>
-    </form>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
 
     <section id="news" class="container-news">
         <div class="container-news-nav">
-            <h2>Noticias 📰</h2>
+            <h2 class="container-news-title">Noticias 📰</h2>
             <p>Ver todas las noticias</p>
         </div>
         <div class="carousel-news">
@@ -125,29 +125,31 @@
                     </div>
                 </div>
             </div>
+            <div class="carousel-news-container-btn">
+                <button class="carousel-news-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></button>
+                <button class="carousel-news-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></button>
+            </div>
         </div>
     </section>
 
     <div class="container-content">
-
         <section id="sports" class="container-sports">
-            <h2>Deportes</h2>
-            <ul>
-                <p>Fútbol ⚽</p>
-                <p>Baloncesto 🏀</p>
-                <p>Beisbol ⚾</p>
-                <p>Formula1 🏎️</p>
-                <p>Golf ⛳</p>
-                <p>Boxeo 🥊</p>
-                <p>Ciclismo 🚴</p>
-                <p>Atletismo  🏃</p>
+            <h2 class="container-sports-title">Deportes</h2>
+            <ul class="container-sports-links">
+                <li>Fútbol ⚽</li>
+                <li>Baloncesto 🏀</li>
+                <li>Beisbol ⚾</li>
+                <li>Formula1 🏎️</li>
+                <li>Golf ⛳</li>
+                <li>Boxeo 🥊</li>
+                <li>Ciclismo 🚴</li>
+                <li>Atletismo  🏃</li>
             </ul>
         </section>
 
         <section class="container-sponsors">
             <div class="container-sponsors-nav">
-                <h2>Sponsors</h2>
-                <p>Conoce a nuestros patrocinadores.</p>
+                <h2 class="container-sponsors-title">Sponsors</h2>
             </div>
             <div class="carousel-sponsors">
                 <div class="carousel-sponsors-inner">

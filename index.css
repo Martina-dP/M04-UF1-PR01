@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.container-home-title,
+.container-news-title,
+.container-sports-title,
+.container-sponsors-title {
+    color: #ff6600;
+}
+
 .container{
     margin: 10px;
 }
@@ -34,7 +41,7 @@
 }
 
 .container-home {
-    height: 240px;
+    height: 280px;
     margin-top: 10px;
     padding: 10px;
     background-image: url("./img/fondo-6.jpg");
@@ -47,11 +54,12 @@
 }
 
 .sub-container-home {
-    width: 70%;
-    height: 100%;
-    background-color: #ffffffcb;
+    width: 60%;
+    height: 80%;
+    background-color: #ffffffe2;
     display: flex;
     flex-direction: column;
+    color: #5F5F5F;
 }
 
 .container-home-title {
@@ -72,39 +80,65 @@
     padding: 10px;
 }
 
-.container-search{
-    border: 1px solid black;
-    margin-top: 10px;
-    height: 220px;
-    width: 50%;
+.container-search {
+    margin: 20px auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #5F5F5F;
+}
+
+.container-search-title {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.search-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    margin: auto;
+    width: 70%;
+    color: #FFFFFF;
 }
 
-.container-search-inner{
-    background-color: #0057B8;
+.search-form div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.search-form input,
+.search-form select {
     width: 60%;
+    padding: 5px;
+    border: 0.5px solid #5F5F5F;
+    border-radius: 5px;
+    color: #5F5F5F;
 }
 
-.container-search-btn {
-    width: 20%;
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px;
 }
 
 .container-news {
-    border: 1px solid black;
     margin-top: 10px;
     padding: 10px;
     overflow: hidden; 
     background-color: #0057B8;
+    color: #FFFFFF;
 }
 
-.carousel-news {
-    display: flex;
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-}
 
 .container-news-nav{
     display: flex;
@@ -114,7 +148,6 @@
 
 .carousel-news-inner {
     display: flex;
-    transition: transform 0.5s ease;
 }
 
 .carousel-news-item {
@@ -123,6 +156,23 @@
     padding: 10px;
     box-sizing: border-box;
     scroll-snap-align: start;
+}
+
+.carousel-news-container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-news-btn {
+    background-color: #ff6600;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
 }
 
 .carousel-new-img {
@@ -136,22 +186,35 @@
     justify-content: space-between;
 }
 
-.container-sports{
-    border: 1px solid black;
+.container-sports,
+.container-sponsors{
+    background-color: #5F5F5F;
+    color: #FFFFFF;
+    border-radius: 5px;
     margin-top: 10px;
+    padding: 10px;
     width: 48%;
 }
 
-.container-sponsors{
-    border: 1px solid black;
+.container-sports-links {
     margin-top: 10px;
-    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+}
+
+.container-sports-links li {
+    font-size: 1.2rem;
+    padding: 8px;
+    text-align: center;
 }
 
 .carousel-sponsors {
     display: flex;
     overflow-x: auto; 
     scroll-snap-type: x mandatory; 
+    margin-top: 10px;
 }
 
 .carousel-sponsors-inner {
@@ -161,18 +224,18 @@
 
 .carousel-sponsors-item {
     flex: 0 0 auto;
-    width: 80%; 
+    width: 30%; 
     padding: 10px;
     box-sizing: border-box;
     scroll-snap-align: start;
 }
 
 .carousel-sponsor-img {
-    width: 70%;
+    height: 140px;
 }
 
 .container-footer {
-    border: 1px solid black;
+    padding: 10px;
     height: 160px;
     margin-top: 10px;
     background-color: #0057B8;
@@ -188,8 +251,21 @@
 .sub-container-footer {
     display: flex;
     justify-content: space-between;
+    height: 45%;
+}
+
+.container-footer-contact-info, 
+.container-footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #FFFFFF;
 }
 
 .container-footer-form {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
 }
