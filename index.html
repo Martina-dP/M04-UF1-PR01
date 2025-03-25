@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+
+    <script>
+        function showAlert() {
+            event.preventDefault(); 
+            console.log("consulta enviada al hacer click");
+            alert("Consulta enviada con éxito");
+        }
+        function toggleMenu() {
+            alert("Menu toggled!");
+        }
+    </script>
 </head>
 <body class="container">
 
+    <script src="scripts.js" ></script>
+
     <nav class="navbar">
         <h1 class="navbar-title">SportsNews 24/7</h1>
+        <div class="navbar-hamburger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
         <ul class="navbar-menu">
-            <a class="navbar-link" href="#home">Inicio</a>
-            <a class="navbar-link" href="#news">Noticias</a>
-            <a class="navbar-link" href="#sports">Deportes</a>
-            <a class="navbar-link" href="#contact">Contacto</a>
+            <li><a class="navbar-link" href="#home">Inicio</a></li>
+            <li><a class="navbar-link" href="#news">Noticias</a></li>
+            <li><a class="navbar-link" href="#sports">Deportes</a></li>
+            <li><a class="navbar-link" href="#contact">Contacto</a></li>
         </ul>
     </nav>
 
@@ -33,7 +49,10 @@
     </section>
 
     <section class="container-search">
-        <h2 class="container-search-title">Buscador</h2>
+        <div class="container-search-nav">
+            <h2 class="container-search-title">Buscador</h2>
+            <button class="container-search-nav-btn" onclick="changeColor()"> Cambiar color </button>
+        </div>
         <form class="search-form">
             <div>
                 <label for="title">Título:</label>
@@ -41,7 +60,7 @@
             </div>
             <div>
                 <label for="sport">Deporte:</label>
-                <select id="sport" name="sport" required>
+                <select id="sport" name="sport" >
                     <option value="none">Seleccione deporte</option>
                     <option value="football">Fútbol</option>
                     <option value="basketball">Baloncesto</option>
@@ -57,7 +76,11 @@
                 <label for="date">Fecha:</label>
                 <input type="date" id="date" name="date" required>
             </div>
-            <button type="submit">Buscar</button>
+            <button type="submit" onclick="showAlert()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
         </form>
     </section>
 
@@ -184,7 +207,7 @@
 
     <footer id="contact" class="container-footer">
         <div class="container-footer-Logo">
-            <p>ACA VA LOGO</p>
+            <img class="container-footer-Logo-img" src="img/logo.jpg" alt="logo">
         </div>
         <div class="sub-container-footer">
             <div class="container-footer-contact-info">

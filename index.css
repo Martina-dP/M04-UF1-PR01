@@ -28,11 +28,20 @@
     margin-left: 10px;
 }
 
+.navbar-hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
 .navbar-menu {
     width: 30%;
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
+}
+
+li {
+    list-style: none;
 }
 
 .navbar-link {
@@ -89,9 +98,29 @@
     background-color: #5F5F5F;
 }
 
-.container-search-title {
+.container-search-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     margin-bottom: 20px;
+}
+
+.container-search-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     color: #FFFFFF;
+}
+
+.container-search-nav-btn {
+    margin-left: auto;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .search-form {
@@ -126,7 +155,7 @@ button {
     margin-top: 10px;
     background-color: #ff6600;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     color: #FFFFFF;
     padding: 10px;
 }
@@ -143,6 +172,7 @@ button {
 .container-news-nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 10px;
 }
 
@@ -190,7 +220,6 @@ button {
 .container-sponsors{
     background-color: #5F5F5F;
     color: #FFFFFF;
-    border-radius: 5px;
     margin-top: 10px;
     padding: 10px;
     width: 48%;
@@ -268,4 +297,96 @@ button {
     flex-direction: column;
     justify-content: space-around;
     align-items: end;
+}
+
+.container-footer-Logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-hamburger-menu {
+        display: block;
+        color: #FFFFFF;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #0057B8;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .container-home {
+        height: auto;
+        padding: 20px;
+    }
+
+    .sub-container-home {
+        width: 90%;
+    }
+
+    .container-search {
+        width: 80%;
+    }
+
+
+    .container-sports {
+        width: 100%;
+    }
+
+    .container-sponsors {
+        display: none;
+    }
+
+    .carousel-news-item {
+        width: 80%;
+    }
+
+    .container-footer {
+        height: 260px;
+    }
+    
+    .container-footer-Logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+    }
+    
+    .sub-container-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        height: 70%;
+        gap: 10px;
+    }
+    
+    .container-footer-contact-info, 
+    .container-footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    
+    .container-footer-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
